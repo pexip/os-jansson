@@ -4,10 +4,10 @@ BUILD_DATE  = $(shell LC_ALL=C date -u "+%B %d, %Y" -d "@$(SOURCE_DATE_EPOCH)")
 SPHINXOPTS := -D today=\"$(BUILD_DATE)\"
 
 %:
-	dh $@ --with=autoreconf
+	dh $@
 
 binary binary-indep build build-indep install install-indep:
-	dh $@ --with=autoreconf,sphinxdoc
+	dh $@ --with=sphinxdoc
 
 override_dh_auto_build-indep:
 	$(MAKE) html SPHINXOPTS="$(SPHINXOPTS)"
