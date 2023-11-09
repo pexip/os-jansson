@@ -9,7 +9,7 @@ Standards-Version: 4.5.0
 Vcs-Git: https://salsa.debian.org/debian/jansson.git
 Vcs-Browser: https://salsa.debian.org/debian/jansson
 Homepage: http://www.digip.org/jansson/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: libjansson4
 Architecture: any
